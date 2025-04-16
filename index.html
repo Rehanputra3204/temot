@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hacker Math Hunt</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #33ff33;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .terminal {
+      border: 1px solid #33ff33;
+      padding: 20px;
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+    }
+    input[type="text"] {
+      background: black;
+      color: #33ff33;
+      border: 1px solid #33ff33;
+      padding: 8px;
+      width: 100%;
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #33ff33;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    .reward {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #33ff33;
+    }
+    a {
+      color: #33ff33;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <h2>NOH TEBAK</h2>
+    <p>tebak emot berikut untuk membuka hadiah:</p>
+    <h3>😏🤡😹😭🙏🏻🗿🤣🤔🔥😍</h3>
+    <input type="text" id="answerInput" placeholder="Masukkan jawaban...">
+    <button onclick="checkAnswer()">Submit</button>
+    <div id="reward" class="reward">
+      <strong>Access granted!</strong><br>
+      Your secret reward: <a href="https://link.dana.id/danakaget?c=spkfkcyve&r=gG6E86&orderId=20250416101214191715010300166662418047031" target="_blank">Click here</a>
+    </div>
+  </div>
+
+  <script>
+    function checkAnswer() {
+      // Mengambil nilai dari input dan mengubahnya menjadi integer
+      const inputVal = parseInt(document.getElementById('answerInput').value.trim(), 10);
+      // Jawaban benar untuk emot berikut adalah 🗿 (sesuai aturan operasi)
+      if (inputVal === 🗿) {
+        document.getElementById('reward').style.display = 'block';
+      } else {
+        alert('jawaban salah sayang.');
+      }
+    }
+  </script>
+</body>
+</html>
